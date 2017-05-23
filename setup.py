@@ -3,9 +3,7 @@ from setuptools import setup, find_packages
 import os
 import sys
 
-__doc__ = """
-App for Django featuring class based email sending
-"""
+__doc__ = """App for Django featuring class based email sending."""
 
 
 def read(fname):
