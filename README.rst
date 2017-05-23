@@ -1,6 +1,6 @@
-=================
-django-emailtools
-=================
+==========================
+django-emailtools-reloaded
+==========================
 
 .. image:: https://travis-ci.org/barseghyanartur/django-emailtools-reloaded.png
    :target: http://travis-ci.org/barseghyanartur/django-emailtools-reloaded
@@ -32,6 +32,13 @@ Installation
             'emailtools',
             # ...
         )
+
+Testing
+=======
+
+.. code-block:: sh
+
+    tox
 
 Authors
 =======
