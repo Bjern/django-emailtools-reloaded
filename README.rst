@@ -40,10 +40,11 @@ Testing
 
     tox
 
-Authors
-=======
-- Originally created at Fusionbox as ``django-emailtools``.
-- Re-branded as ``django-emailtools-reloaded`` for better maintainability.
+Authors amd maintainers
+=======================
+- Originally created and maintained at Fusionbox as ``django-emailtools``.
+- Re-branded as ``django-emailtools-reloaded`` for better maintainability
+  starting from May 2017.
 
 Documentation
 =============
