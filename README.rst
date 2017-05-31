@@ -42,8 +42,8 @@ Testing
 
 Authors
 =======
-- Originally created at Fusionbox as ``django-email-tools``.
-- Re-branded as ``django-email-tools-reloaded`` for better maintainability.
+- Originally created at Fusionbox as ``django-emailtools``.
+- Re-branded as ``django-emailtools-reloaded`` for better maintainability.
 
 Documentation
 =============
