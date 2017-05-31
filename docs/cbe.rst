@@ -2,7 +2,7 @@ Class-based emails
 ------------------
 
 ``django-emailtools-reloaded`` takes an approach to sending emails similar to
-the class-based view's approach to view callables.  At Fusionbox we've found
+the class-based view's approach to view callables. At Fusionbox we've found
 that our email sending often follows a predictable pattern and class-based
 emails arose from that pattern.
 

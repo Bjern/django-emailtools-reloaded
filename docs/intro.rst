@@ -1,10 +1,10 @@
 Introduction
 ============
 
-``django-emailtools`` takes an approach to sending emails similar to the
-class-based view's approach to view callables.  At Fusionbox we've found that
-our email sending often follows a predictable pattern and class-based emails
-arose from that pattern.
+``django-emailtools-reloaded`` takes an approach to sending emails similar to
+the class-based view's approach to view callables.  At Fusionbox we've found
+that our email sending often follows a predictable pattern and class-based
+emails arose from that pattern.
 
 Ultimately, the goal of class-based emails is to 
 
@@ -15,7 +15,7 @@ Installation
 
     .. code-block:: sh
 
-        pip install django-emailtools
+        pip install django-emailtools-reloaded
 
     Or you can install it from source:
 

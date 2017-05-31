@@ -1,5 +1,5 @@
-django-emailtools
-=================
+django-emailtools-reloaded
+==========================
 
 Tools to assist in sending emails from your Django app.
 
