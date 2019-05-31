@@ -1,22 +1,28 @@
 ==========================
 django-emailtools-reloaded
 ==========================
+``django-email-tools`` is a suite of tools meant to assist in sending emails
+from your ``Django`` app.
+
+.. image:: https://img.shields.io/pypi/v/django-emailtools-reloaded.svg
+   :target: https://pypi.python.org/pypi/django-emailtools-reloaded
+   :alt: PyPI Version
 
 .. image:: https://travis-ci.org/barseghyanartur/django-emailtools-reloaded.png
    :target: http://travis-ci.org/barseghyanartur/django-emailtools-reloaded
    :alt: Build Status
 
-Django Email Tools is a suite of tools meant to assist in sending emails from
-your Django app.
+.. image:: https://img.shields.io/badge/license-GPL--2.0--only%20OR%20LGPL--2.1--or--later-blue.svg
+   :target: https://github.com/barseghyanartur/django-emailtools-reloaded/#License
+   :alt: GPL-2.0-only OR LGPL-2.1-or-later
 
 Prerequisites
 =============
-Python 2.7, 3.4, 3.5
-Django 1.6, 1.7, 1.8, 1.9, 1.10 and 1.11
+Python: 2.7, 3.5 and 3.6
+Django: 1.8, 1.9, 1.10, 1.11, 2.0, 2.1 and 2.2
 
 Installation
 ============
-
 1.  Install the package:
 
     .. code-block:: sh
@@ -35,6 +41,13 @@ Installation
 
 Testing
 =======
+**Test current environment**
+
+.. code-block:: sh
+
+    ./runtests.py
+
+**Test all environments**
 
 .. code-block:: sh
 
