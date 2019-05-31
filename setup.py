@@ -10,7 +10,6 @@ def read(fname):
 
 
 install_requires = [
-    'Django>=1.8',
     'markdown',
 ]
 
