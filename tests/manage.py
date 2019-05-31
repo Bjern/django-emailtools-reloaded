@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 import os
 import sys
-import warnings
+# import warnings
 
-warnings.simplefilter('error')
+# warnings.simplefilter('error')
 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tests.settings")

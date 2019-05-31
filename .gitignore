@@ -3,9 +3,12 @@
 /docs/_build/
 /tests/sqlite_database
 /tests/.coverage
+*.py,cover
 /tests/htmlcov/
 /dist/
+/htmlcov/
 /.tox
 /build/
 /tmp/
 /.idea/
+.coverage

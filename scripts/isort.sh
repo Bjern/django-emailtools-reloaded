@@ -1,2 +1,2 @@
 reset
-isort -rc src/ --diff
+isort -rc . --diff

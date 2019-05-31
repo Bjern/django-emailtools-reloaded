@@ -20,7 +20,7 @@ INSTALLED_APPS = (
 
 DEBUG_TEMPLATE = False
 
-if DJANGO_VERSION[:2] in ((1, 10), (1, 11)):
+if DJANGO_VERSION[:2] in ((1, 10), (1, 11), (2, 0), (2, 1), (2, 2)):
     TEMPLATES = [
         {
             'BACKEND': 'django.template.backends.django.DjangoTemplates',

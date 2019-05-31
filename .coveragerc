@@ -1,0 +1,6 @@
+[run]
+omit =
+    emailtools/tests.py
+    tests/tests/settings.py
+    tests/tests/sqlsqite_test_settings.py
+    .tox/
