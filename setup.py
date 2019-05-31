@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 import os
-import sys
 
 __doc__ = """App for Django featuring class based email sending."""
 
@@ -11,14 +10,11 @@ def read(fname):
 
 
 install_requires = [
-    'Django>=1.6',
+    'Django>=1.8',
     'markdown',
 ]
 
-version = '0.2.3'
-
-if sys.version.startswith("2.6"):
-    install_requires.append("importlib")
+version = '0.2.4'
 
 setup(
     name='django-emailtools-reloaded',

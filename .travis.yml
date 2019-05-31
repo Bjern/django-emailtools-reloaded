@@ -2,38 +2,44 @@ language: python
 sudo: false
 python:
   - "2.7"
-  - "3.4"
   - "3.5"
+  - "3.6"
 
 env:
-  - DJANGO_PACKAGE=Django==1.4.22
-  - DJANGO_PACKAGE=Django==1.5.12
-  - DJANGO_PACKAGE=Django==1.6.11
-  - DJANGO_PACKAGE=Django==1.7.11
   - DJANGO_PACKAGE=Django==1.8.18
   - DJANGO_PACKAGE=Django==1.9.13
   - DJANGO_PACKAGE=Django==1.10.7
   - DJANGO_PACKAGE=Django==1.11.5
 install:
-  - pip install -q $DJANGO_PACKAGE --use-mirrors
+  - pip install -r tests/requirements.txt
   - python setup.py install
-script: make test
 
 matrix:
-  exclude:
-    - python: "3.4"
-      env: DJANGO_PACKAGE=Django==1.4.22
-    - python: "3.4"
-      env: DJANGO_PACKAGE=Django==1.5.12
-    - python: "3.4"
-      env: DJANGO_PACKAGE=Django==1.6.11
-    - python: "3.4"
-      env: DJANGO_PACKAGE=Django==1.7.11
-    - python: "3.5"
-      env: DJANGO_PACKAGE=Django==1.4.22
-    - python: "3.5"
-      env: DJANGO_PACKAGE=Django==1.5.12
-    - python: "3.5"
-      env: DJANGO_PACKAGE=Django==1.6.11
-    - python: "3.5"
-      env: DJANGO_PACKAGE=Django==1.7.11
+  fast_finish: true
+  include:
+  - env: TOX_ENV=py27-django18
+    python: 2.7
+  - env: TOX_ENV=py27-django19
+    python: 2.7
+  - env: TOX_ENV=py27-django110
+    python: 2.7
+  - env: TOX_ENV=py27-django111
+    python: 2.7
+  - env: TOX_ENV=py35-django20
+    python: 3.5
+  - env: TOX_ENV=py36-django111
+    python: 3.6
+  - env: TOX_ENV=py36-django20
+    python: 3.6
+  - env: TOX_ENV=py36-django21
+    python: 3.6
+  - env: TOX_ENV=py36-django22
+    python: 3.6
+  - env: TOX_ENV=py37-django20
+    python: 3.7
+  - env: TOX_ENV=py37-django21
+    python: 3.7
+  - env: TOX_ENV=py37-django22
+    python: 3.7
+
+script: travis_retry tox -e $TOX_ENV
