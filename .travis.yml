@@ -2,11 +2,6 @@ language: python
 
 sudo: false
 
-env:
-  - DJANGO_PACKAGE=Django==1.8.18
-  - DJANGO_PACKAGE=Django==1.9.13
-  - DJANGO_PACKAGE=Django==1.10.7
-  - DJANGO_PACKAGE=Django==1.11.5
 install:
   - pip install -r tests/requirements.txt
   - python setup.py install
