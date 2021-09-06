@@ -19,7 +19,7 @@ from your ``Django`` app.
 Prerequisites
 =============
 - Python: 2.7, 3.5 and 3.6
-- Django: 1.8, 1.9, 1.10, 1.11, 2.0, 2.1 and 2.2
+- Django: 1.8, 1.9, 1.10, 1.11, 2.0, 2.1, 2.2 and 3.2
 
 Installation
 ============
@@ -38,6 +38,12 @@ Installation
             'emailtools',
             # ...
         )
+
+3.  Install Six
+
+    .. code-block:: sh
+
+        pip install six
 
 Testing
 =======
