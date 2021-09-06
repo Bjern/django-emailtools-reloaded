@@ -11,6 +11,7 @@ def read(fname):
 
 install_requires = [
     'markdown',
+    'six'
 ]
 
 version = '0.2.4'
